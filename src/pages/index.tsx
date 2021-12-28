@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <>
       <h1>{currentValue}</h1>
+      <p>Hello world</p>
     </>
 
   )
