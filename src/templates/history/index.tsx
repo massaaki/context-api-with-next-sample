@@ -12,28 +12,28 @@ export const History = () => {
             <th>unit price</th>
             <th>amount</th>
             <th>total</th>
-            <th>date</th>
+            <th>month</th>
           </tr>
           <tr>
             <td>AAPL</td>
             <td>$150</td>
             <td>2,3</td>
             <td>$345</td>
-            <td>{"Jan'21"}</td>
+            <td>1</td>
           </tr>
           <tr>
             <td>AAPL</td>
             <td>$150</td>
             <td>2,3</td>
             <td>$345</td>
-            <td>{"Jan'21"}</td>
+            <td>1</td>
           </tr>
           <tr>
             <td>AAPL</td>
             <td>$150</td>
             <td>2,3</td>
             <td>$345</td>
-            <td>{"Jan'21"}</td>
+            <td>1</td>
           </tr>
         </table>
 
