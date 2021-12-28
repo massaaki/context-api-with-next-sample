@@ -1,11 +1,10 @@
-import { usePlayer } from "../contexts/PlayerContext"
+import { useInvest } from "../contexts/InvestContext"
 
 export default function Home() {
-  const { playPause, status } = usePlayer();
+  const { currentValue } = useInvest();
   return (
     <>
-      <h1>{status}</h1>
-      <button onClick={playPause}> Change Player status</button>
+      <h1>{currentValue}</h1>
     </>
 
   )

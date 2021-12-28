@@ -1,10 +1,10 @@
-import { PlayerProvider } from "../contexts/PlayerContext"
+import { InvestProvider } from "../contexts/InvestContext"
 
 function MyApp({ Component, pageProps }) {
   return (
-    <PlayerProvider>
+    <InvestProvider>
       <Component {...pageProps} />
-    </PlayerProvider>
+    </InvestProvider>
   )
 }
 
