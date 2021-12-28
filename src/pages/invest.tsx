@@ -1,5 +1,5 @@
+import { Invest } from "../templates/Invest";
+
 export default function InvestPage() {
-  return (
-    <h1>Invest</h1>
-  )
+  return <Invest />
 }
