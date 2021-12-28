@@ -6,7 +6,7 @@ export const Resume = () => {
     <S.Container>
       <S.Content>
         <ul>
-          <ResumeItem title='current' value='$35.000,00' />
+          <ResumeItem title='Total' value='$35.000,00' />
           <ResumeItem title='Invested' value='$25.000,00' />
           <ResumeItem title='Profit' value='$10.000,00' />
         </ul>
