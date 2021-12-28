@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
-import { Logo } from "../../illustrations/Logo"
 import { NavLink } from "../NavLink";
 
 import * as S from './styles';
@@ -14,7 +14,11 @@ export const Nav = () => {
     <S.Container>
       <S.Content>
         <div>
-          <Logo />
+          <Link href="/">
+            <a>
+              <Image src="/logo.png" width={157} height={54} alt="Logo image" />
+            </a>
+          </Link>
         </div>
         <ul>
           <NavLink href="/" title="Home" />
