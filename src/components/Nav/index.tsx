@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { NavLink } from "../NavLink";
 
 import * as S from './styles';
+import { Logo } from "../../illustration/Logo";
 
 export const Nav = () => {
   const { asPath } = useRouter();
@@ -16,7 +17,7 @@ export const Nav = () => {
         <div>
           <Link href="/">
             <a>
-              <Image src="/logo.png" width={157} height={54} alt="Logo image" />
+              <Logo />
             </a>
           </Link>
         </div>
