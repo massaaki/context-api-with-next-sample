@@ -1,5 +1,6 @@
 import { Nav } from '../Nav';
 import { Resume } from '../Resume';
+
 import * as S from './styles';
 
 export const Header = () => {
@@ -8,7 +9,6 @@ export const Header = () => {
       <S.Content>
         <Nav />
         <Resume />
-
       </S.Content>
     </S.Container>
   )
