@@ -1,4 +1,5 @@
 import { useInvest } from '../../contexts/InvestContext';
+
 import * as S from './styles';
 
 export const History = () => {
@@ -12,16 +13,12 @@ export const History = () => {
         <table>
           <tr>
             <th>stock</th>
-            {/* <th>unit price</th> */}
-            {/* <th>amount</th> */}
             <th>total</th>
             <th>month</th>
           </tr>
           {stocks.map((stock, index) => (
             <tr key={index}>
               <td>{stock.code}</td>
-              {/* <td>{stock.price}</td> */}
-              {/* <td>{stock.amount}</td> */}
               <td>{stock.price * stock.amount}</td>
               <td>{stock.month}</td>
             </tr>

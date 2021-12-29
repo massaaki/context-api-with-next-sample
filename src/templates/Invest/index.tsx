@@ -79,11 +79,6 @@ export const Invest = () => {
           <input type="number" name="price" id="price" onChange={(e) => setPrice(Number(e.target.value))} value={price} placeholder="price" disabled />
           <label htmlFor="growthRate">Growth rate (per month):</label>
           <input type="number" name="growthRate" id="growthRate" onChange={(e) => setGrowthRate(Number(e.target.value))} value={growthRate} placeholder='average monthly growth (%)' disabled />
-
-          {/* <label htmlFor="amount">Amount:</label>
-          <input type="number" name="amount" id="amount" onChange={(e) => setAmount(Number(e.target.value))} value={amount} placeholder="amount" /> */}
-
-
           <label htmlFor="month">Month:</label>
           <input type="number" name="month" id="month" onChange={(e) => setMonth(Number(e.target.value))} placeholder="month(1-12)" value={month} min={1} max={12} />
           <input type="submit" value="Add" />

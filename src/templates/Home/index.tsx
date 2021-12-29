@@ -24,9 +24,6 @@ export const Home = () => {
       stocks.forEach((stock) => {
         console.log(stock.month);
         if (currentMonthCheck >= stock.month) {
-          console.log(stock.month, currentMonthCheck);
-
-          // const acc = index > 0 ? dataInvested[index - 1] : 0;
           const totalInvested = stock.amount * stock.price;
           dataInvested[index] += totalInvested;
         }
@@ -43,9 +40,7 @@ export const Home = () => {
           dataProfit[index] += Number(totalProfit.toFixed(2));
         }
       })
-
     })
-
 
     const seriesTemp = [
       {
@@ -59,7 +54,6 @@ export const Home = () => {
     ]
 
     setSeries(seriesTemp);
-
 
   }, [stocks]);
 

@@ -1,11 +1,10 @@
 import Link from "next/link"
 import { useRouter } from 'next/router';
-import Image from 'next/image';
 
 import { NavLink } from "../NavLink";
+import { Logo } from "../../illustration/Logo";
 
 import * as S from './styles';
-import { Logo } from "../../illustration/Logo";
 
 export const Nav = () => {
   const { asPath } = useRouter();
