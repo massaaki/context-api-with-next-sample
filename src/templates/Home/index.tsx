@@ -41,7 +41,6 @@ export const Home = () => {
         if (currentMonth <= 12 && currentMonth > stock.month) {
           const totalProfit = (stock.amount * stock.price) * Math.pow((1 + stock.growthRate / 100), timeMonthDiff) - stock.price;
           dataProfit[index] += Number(totalProfit.toFixed(2));
-
         }
       })
 
