@@ -7,7 +7,7 @@ import * as S from './styles';
 export const Invest = () => {
   const [code, setCode] = useState('');
   const [price, setPrice] = useState(0);
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState(1);
   const [growthRate, setGrowthRate] = useState(0);
   const [month, setMonth] = useState(1);
 
@@ -24,9 +24,6 @@ export const Invest = () => {
         month,
         price
       })
-      setAmount(0);
-      setMonth(0);
-
     }
   }
 
@@ -45,6 +42,7 @@ export const Invest = () => {
           break;
         case 'FACEBOOK':
           setPrice(60);
+          setGrowthRate(2.8);
           break;
         case 'BERKSHIRE':
           setPrice(80);
@@ -82,8 +80,8 @@ export const Invest = () => {
           <label htmlFor="growthRate">Growth rate (per month):</label>
           <input type="number" name="growthRate" id="growthRate" onChange={(e) => setGrowthRate(Number(e.target.value))} value={growthRate} placeholder='average monthly growth (%)' disabled />
 
-          <label htmlFor="amount">Amount:</label>
-          <input type="number" name="amount" id="amount" onChange={(e) => setAmount(Number(e.target.value))} value={amount} placeholder="amount" />
+          {/* <label htmlFor="amount">Amount:</label>
+          <input type="number" name="amount" id="amount" onChange={(e) => setAmount(Number(e.target.value))} value={amount} placeholder="amount" /> */}
 
 
           <label htmlFor="month">Month:</label>
